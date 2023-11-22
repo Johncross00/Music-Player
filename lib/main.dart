@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_player/views/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,17 +18,17 @@ class MyApp extends StatelessWidget {
         )
       ),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-        title: const Text("The best Music Player",
-        style: TextStyle(
-          color: Colors.black,
-        ),),
-        ),
-        body: const Center(
-          child: Text("The best Music Player"),
-        ),
-      ),
+       home: const HomePage()//Scaffold(
+      //   appBar: AppBar(
+      //   title: const Text("The best Music Player",
+      //   style: TextStyle(
+      //     color: Colors.black,
+      //   ),),
+      //   ),
+      //   body: const Center(
+      //     child: Text("The best Music Player"),
+      //   ),
+      // ),
     );
   }
 }
