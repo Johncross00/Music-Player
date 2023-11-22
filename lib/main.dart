@@ -9,12 +9,22 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        fontFamily: "Poppins",
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+        )
+      ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-        title: Text("The best Music Player"),
+        title: const Text("The best Music Player",
+        style: TextStyle(
+          color: Colors.black,
+        ),),
         ),
-        body: Center(
+        body: const Center(
           child: Text("The best Music Player"),
         ),
       ),
